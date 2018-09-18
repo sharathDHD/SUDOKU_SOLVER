@@ -20,24 +20,7 @@ int again() //to print out put screen
 
     setlinestyle(0, 0, 1);
     setfillpattern( & ww[0][0], RED);
-    /* bar(15,15,getmaxx()-10,getmaxy()-10);
-     for(s=0,sp=0,yl=0;s<9;s++,sp=sp+60)
-      {
-       if(s%3==0&&s!=0)
-        {
-        yl=yl+60;
-        sp=0;
-        }
-           else if(s==1||s==5||s==7||s==3)
-        setfillpattern(&ww[1][0],0);
-        else
-        setfillpattern(&ww[1][0],1);
-        bar(x2-90+sp,y2-90+yl,x2-30+sp,y2-30+yl);
-         }
-      setfillpattern(&ww[0][0],0);
-      bar(x2-90,y2-30,x2-30,y2+30);
-         setfillpattern(&ww[1][0],1);
-      bar(x2-90,y2+30,x2-30,y2+90);   */
+   
     setcolor(15);
     rectangle(14, 14, getmaxx() - 10, getmaxy() - 10);
     setcolor(15);
@@ -81,23 +64,7 @@ void print_solution(g) //sol with outscreen
     setlinestyle(0, 0, 1);
     setfillpattern( & ww[0][0], 0);
     bar(15, 15, getmaxx() - 10, getmaxy() - 10);
-    /* for(s=0,sp=0,yl=0;s<9;s++,sp=sp+60)
-      {
-       if(s%3==0&&s!=0)
-        {
-        yl=yl+60;
-        sp=0;
-        }
-        else if(s==1||s==5||s==7||s==3)
-        setfillpattern(&ww[1][0],BLUE);
-        else
-        setfillpattern(&ww[1][0],GREEN);
-        bar(x2-90+sp,y2-90+yl,x2-30+sp,y2-30+yl);
-       }
-     setfillpattern(&ww[0][0],0);
-      bar(x2-90,y2-30,x2-30,y2+30);
-       setfillpattern(&ww[1][0],1);
-      bar(x2-90,y2+30,x2-30,y2+90);    */
+   
     setcolor(15);
     rectangle(15, 15, getmaxx() - 10, getmaxy() - 10);
     rectangle(getmaxx() / 2 - 90, getmaxy() / 2 - 90, getmaxx() / 2 + 90, getmaxy() / 2 + 90);
